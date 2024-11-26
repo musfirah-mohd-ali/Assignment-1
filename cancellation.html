@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleCancel.css">
+    <title>Cancellation/Re-Print Receipt</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img class="logo" src="CDGDrivingCentreLogo.png" alt="CDC logo" />
+            <a href="#" class="logout-button">Logout</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="cancellation.html" class="active">Cancellation/Re-Print Receipt</a></li>
+                <li><a href="transaction.html">Transaction Statements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2>Cancellation and Re-Print Receipt</h2>
+        <p>Use this page to cancel your bookings or re-print your receipts.</p>
+        
+        <section>
+            <h3>Cancel Booking</h3>
+            <form method="post" class="form-section">
+                <label for="booking-id">Booking ID:</label>
+                <input type="text" id="booking-id" name="booking-id" placeholder="Enter your booking ID" required>
+                
+                <label for="reason">Reason for Cancellation:</label>
+                <textarea id="reason" name="reason" placeholder="Enter reason for cancellation" rows="4" required></textarea>
+                
+                <button type="submit" class="submit-button">Cancel Booking</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Re-Print Receipt</h3>
+            <form method="post" class="form-section">
+                <label for="receipt-id">Receipt ID:</label>
+                <input type="text" id="receipt-id" name="receipt-id" placeholder="Enter receipt ID" required>
+                
+                <button type="submit" class="submit-button">Re-Print Receipt</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        Copyright © 2009 ComfortDelGro Driving Centre. All rights reserved. 
+        <a href="#">Terms of Use</a> | 
+        <a href="#">Privacy Policy</a>
+    </footer>
+</body>
+</html>
