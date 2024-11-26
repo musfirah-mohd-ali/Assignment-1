@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header-content">
+            <img class="logo" src="CDGDrivingCentreLogo.png" alt="CDC logo" />
+            <a href="#" class="logout-button">Logout</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="cancellation.html">Cancellation/Re-Print Receipt</a></li>
+                <li><a href="transaction.html">Transaction Statements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <table>
+            <thead>
+                <tr class="header">
+                    <th colspan="2">Membership Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="label">LEARNERS ID:</td>
+                    <td>00785345</td>
+                </tr>
+                <tr>
+                    <td class="label">NRIC/FIN/UIN:</td>
+                    <td>TXXXX123J</td>
+                </tr>
+                <tr>
+                    <td class="label">MEMBERSHIP EXPIRY DATE:</td>
+                    <td>15-Jun-2025</td>
+                </tr>
+                <tr>
+                    <td class="label">ENROLLED COURSE:</td>
+                    <td>03. Class 3A Motorcar</td>
+                </tr>
+                <tr>
+                    <td class="label">STORE VALUE BALANCE:</td>
+                    <td>$83.71</td>
+                </tr>
+                <tr>
+                    <td class="label">DEPOSIT:</td>
+                    <td>$10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <section>
+        <h2>Announcements</h2>
+        <p>Check out our latest announcements and updates.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Announcement</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>New driving classes available</td>
+                    <td>01-Nov-2024</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Upcoming Bookings</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Booking ID</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>10-Nov-2024</td>
+                    <td>10:00 AM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        Copyright © 2009 ComfortDelGro Driving Centre. All rights reserved. 
+        <a href="#">Terms of Use</a> | 
+        <a href="#">Privacy Policy</a>
+    </footer>
 </body>
 </html>
