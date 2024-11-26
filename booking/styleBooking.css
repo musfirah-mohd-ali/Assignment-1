@@ -221,7 +221,7 @@ section table tr:hover {
 .slot-button.selected {
     background-color: #28a745;
     color: white;
-    cursor: not-allowed; /* Disable further clicking */
+    cursor: not-allowed;
 }
 
 /* Disable the button once selected */
@@ -233,26 +233,26 @@ section table tr:hover {
 
 /* Style for selected slot button */
 .slot-button.selected {
-    background-color: #28a745; /* Green color for selected */
+    background-color: #28a745; 
     color: white;
-    cursor: not-allowed; /* Make it look like the button can't be clicked again */
+    cursor: not-allowed; 
 }
 
 .slot-button.selected:hover {
-    background-color: #28a745; /* No hover effect for selected state */
+    background-color: #28a745; 
 }
 
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .slot-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 480px) {
     .slot-container {
-        grid-template-columns: 1fr; /* 1 column on very small screens */
+        grid-template-columns: 1fr; 
     }
 }
 

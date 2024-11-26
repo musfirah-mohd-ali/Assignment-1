@@ -55,28 +55,28 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-between; /* Distribute items evenly */
-    padding: 10px 50px; /* Added horizontal padding to keep the ends away from the edges */
+    justify-content: space-between; 
+    padding: 10px 50px; 
     list-style: none;
 }
 
 nav ul li {
-    position: relative; /* Position relative for after pseudo-element */
-    flex: 1; /* Allow items to take equal space */
-    text-align: center; /* Center the text */
+    position: relative; 
+    flex: 1;
+    text-align: center; 
 }
 
 nav ul li:not(:last-child) {
-    border-right: 1px solid rgba(255, 255, 255, 0.5); /* Right border for separation */
+    border-right: 1px solid rgba(255, 255, 255, 0.5); 
 }
 
 nav ul li a {
     font-family: 'Bebas Neue', sans-serif;
     color: white;
     text-decoration: none;
-    padding: 15px 0; /* Vertical padding for better clickability */
+    padding: 15px 0; 
     font-size: 18px;
-    display: block; /* Allow padding to apply to the block element */
+    display: block; 
     transition: background-color 0.3s, color 0.3s;
 }
 
