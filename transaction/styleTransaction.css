@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.logout-button {
+    color: #EB6E1F;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #EB6E1F;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: #EB6E1F;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+nav {
+    width: 100%;
+    background-color: #0077C0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    padding: 10px 50px; /* Added horizontal padding to keep the ends away from the edges */
+    list-style: none;
+}
+
+nav ul li {
+    position: relative; /* Position relative for after pseudo-element */
+    flex: 1; /* Allow items to take equal space */
+    text-align: center; /* Center the text */
+}
+
+nav ul li:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.5); /* Right border for separation */
+}
+
+nav ul li a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0; /* Vertical padding for better clickability */
+    font-size: 18px;
+    display: block; /* Allow padding to apply to the block element */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #EB6E1F;
+}
