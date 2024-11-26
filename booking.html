@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleBooking.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img class="logo" src="CDGDrivingCentreLogo.png" alt="CDC logo" />
+            <a href="#" class="logout-button">Logout</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="cancellation.html">Cancellation/Re-Print Receipt</a></li>
+                <li><a href="transaction.html">Transaction Statements</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <h2>Book a Lesson</h2>
+        <p>Select your preferred date and time slot to book a lesson.</p>
+        
+        <section>
+            <h3>Available Slots</h3>
+            <div class="slot-container">
+                <div class="slot-card">
+                    <h4>9:00 AM - 10:00 AM</h4>
+                    <button class="slot-button">Select</button>
+                </div>
+                <div class="slot-card">
+                    <h4>10:30 AM - 11:30 AM</h4>
+                    <button class="slot-button">Select</button>
+                </div>
+                <div class="slot-card">
+                    <h4>1:00 PM - 2:00 PM</h4>
+                    <button class="slot-button">Select</button>
+                </div>
+                <div class="slot-card">
+                    <h4>2:30 PM - 3:30 PM</h4>
+                    <button class="slot-button">Select</button>
+                </div>
+                <div class="slot-card">
+                    <h4>4:00 PM - 5:00 PM</h4>
+                    <button class="slot-button">Select</button>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section>
+            <h3>Select a Time Slot</h3>
+            <div class="slot-grid" id="slot-grid">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        Copyright © 2009 ComfortDelGro Driving Centre. All rights reserved. 
+        <a href="#">Terms of Use</a> | 
+        <a href="#">Privacy Policy</a>
+    </footer>
+
+    <script src="scriptBooking.js"></script>
+</body>
+</html>
