@@ -23,49 +23,40 @@
         </nav>
     </header>
 
-    <div class="main-content">
-        <h2>Cancellation and Re-Print Receipt</h2>
-        <p class="intro-text">Easily manage your bookings by cancelling them or reprinting your receipt.</p>
-        
-        <div class="form-container">
-            <!-- Cancel Booking Section -->
+    <main>
+        <div class="main-content">
+            <h2>Cancellation and Re-Print Receipt</h2>
+            <p>Use this page to cancel your bookings or re-print your receipts.</p>
+
             <section class="form-section">
                 <h3>Cancel Booking</h3>
                 <form method="post">
-                    <div class="form-group">
-                        <label for="booking-id">Booking ID:</label>
-                        <input type="text" id="booking-id" name="booking-id" placeholder="Enter your booking ID" required>
-                    </div>
+                    <label for="booking-id">Booking ID:</label>
+                    <input type="text" id="booking-id" name="booking-id" placeholder="Enter your booking ID" required>
                     
-                    <div class="form-group">
-                        <label for="reason">Reason for Cancellation:</label>
-                        <textarea id="reason" name="reason" placeholder="Enter reason for cancellation" rows="4" required></textarea>
-                    </div>
+                    <label for="reason">Reason for Cancellation:</label>
+                    <textarea id="reason" name="reason" placeholder="Enter reason for cancellation" rows="4" required></textarea>
                     
                     <button type="submit" class="submit-button">Cancel Booking</button>
                 </form>
             </section>
 
-            <!-- Re-Print Receipt Section -->
             <section class="form-section">
                 <h3>Re-Print Receipt</h3>
                 <form method="post">
-                    <div class="form-group">
-                        <label for="receipt-id">Receipt ID:</label>
-                        <input type="text" id="receipt-id" name="receipt-id" placeholder="Enter receipt ID" required>
-                    </div>
+                    <label for="receipt-id">Receipt ID:</label>
+                    <input type="text" id="receipt-id" name="receipt-id" placeholder="Enter receipt ID" required>
                     
                     <button type="submit" class="submit-button">Re-Print Receipt</button>
                 </form>
             </section>
         </div>
-    </div>
+    </main>
 
     <footer>
-        <p>Copyright © 2009 ComfortDelGro Driving Centre. All rights reserved.</p>
-        <p>
-            <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
-        </p>
+        Copyright © 2009 ComfortDelGro Driving Centre. All rights reserved. 
+        <a href="#">Terms of Use</a> | 
+        <a href="#">Privacy Policy</a>
     </footer>
 </body>
 </html>
