@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styleBooking.css">
+    <link rel="stylesheet" href="/booking/styleBooking.css">
     <title>Home</title>
 </head>
 <body>
@@ -22,43 +22,41 @@
             </ul>
         </nav>
     </header>
-    <div class="main-content">
-        <h2>Book a Lesson</h2>
-        <p>Select your preferred date and time slot to book a lesson.</p>
-        
-        <section>
-            <h3>Available Slots</h3>
-            <div class="slot-container">
-                <div class="slot-card">
-                    <h4>9:00 AM - 10:00 AM</h4>
-                    <button class="slot-button">Select</button>
+
+    <main>
+        <div class="main-content">
+            <h2>Book Your Driving Lesson</h2>
+            <p>Choose a date and time that suits you best for your driving lesson.</p>
+
+            <section class="form-section">
+                <h3>Choose Your Lesson Date</h3>
+                <input type="date" id="lesson-date" name="lesson-date" required>
+            </section>
+
+            <section class="form-section">
+                <h3>Select Your Time Slot</h3>
+                <div class="slot-container" id="slot-container">
+                    <!-- Time slots will be dynamically populated here -->
                 </div>
-                <div class="slot-card">
-                    <h4>10:30 AM - 11:30 AM</h4>
-                    <button class="slot-button">Select</button>
-                </div>
-                <div class="slot-card">
-                    <h4>1:00 PM - 2:00 PM</h4>
-                    <button class="slot-button">Select</button>
-                </div>
-                <div class="slot-card">
-                    <h4>2:30 PM - 3:30 PM</h4>
-                    <button class="slot-button">Select</button>
-                </div>
-                <div class="slot-card">
-                    <h4>4:00 PM - 5:00 PM</h4>
-                    <button class="slot-button">Select</button>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section>
-            <h3>Select a Time Slot</h3>
-            <div class="slot-grid" id="slot-grid">
-            </div>
-        </section>
-    </div>
+            </section>
+
+            <section class="form-section">
+                <h3>Additional Details</h3>
+                <form method="post">
+                    <label for="lesson-type">Lesson Type:</label>
+                    <select id="lesson-type" name="lesson-type" required>
+                        <option value="basic">Basic Lesson</option>
+                        <option value="advance">Advanced Lesson</option>
+                    </select>
+
+                    <label for="additional-notes">Additional Notes:</label>
+                    <textarea id="additional-notes" name="additional-notes" rows="4" placeholder="Enter any special requests or notes"></textarea>
+
+                    <button type="submit" class="submit-button">Book Lesson</button>
+                </form>
+            </section>
+        </div>
+    </main>
 
     <footer>
         Copyright © 2009 ComfortDelGro Driving Centre. All rights reserved. 
@@ -66,6 +64,6 @@
         <a href="#">Privacy Policy</a>
     </footer>
 
-    <script src="scriptBooking.js"></script>
+    <script src="/booking/scriptBooking.js"></script>
 </body>
 </html>
