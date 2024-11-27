@@ -114,7 +114,6 @@ footer a:hover {
     }
 }
 
-/* Main Content */
 .main-content {
     max-width: 80%;
     margin: 30px auto;
@@ -132,4 +131,24 @@ p {
     text-align: center;
     color: #555;
     margin-bottom: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#date-filter{
+    padding: 5pm 10px;
+    font-size: 16px;
+}
+.button{
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: #0077C0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
