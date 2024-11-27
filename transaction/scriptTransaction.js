@@ -46,7 +46,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 <td>${transaction.bookingType}</td>
                 <td>${transaction.date}</td>
                 <td>${transaction.timeSlot}</td>
-                <td>${transaction.lessonType}</td>`;
+                <td>${transaction.lessonType}</td>
+                <td>${transaction.totalPrice}</td>
+                `;
                 tableBody.appendChild(row);
         });
     }
