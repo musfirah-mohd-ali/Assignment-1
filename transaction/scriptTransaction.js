@@ -29,6 +29,44 @@ document.addEventListener("DOMContentLoaded", function() {
             totalPrice: "$89.75"
         },
     ];
+    const tableBody = document.getElementById("transaction-table");
+    const dataFilter = document.getElementById("date-filter");
+    const clearFilter = document.getElementById("clear-filter");
 
-}    
-)
+    //function to input data into table
+    function populateTable(data) {
+        tableBody.innerHTML=""; //to clear the previous rows
+        if (data.length === 0) {
+            tableBody.innerHTML = "<tr><td colspan='5'>No data found.</td></tr>";
+            return;
+        }
+        data.forEach(transaction => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${transaction.bookingType}</td>
+                <td>${transaction.date}</td>
+                <td>${transaction.timeSlot}</td>
+                <td>${transaction.lessonType}</td>`;
+                tableBody.appendChild(row);
+        });
+    }
+    // Filtering transactions by date
+    dataFilter.addEventListener("change", function() {
+        const selectedDate = dataFilter.value; // Corrected property
+        if (selectedDate) {
+            const filteredData = transactionData.filter(
+                transaction => transaction.date === selectedDate
+            );
+            populateTable(filteredData);
+        }
+    });
+
+    // Clear filter to show all transactions
+    clearFilter.addEventListener("click", function() {
+        dataFilter.value = ""; // Clear the selected date
+        populateTable(transactionData); // Show all transactions
+    });
+
+    // Initial population of the table
+    populateTable(transactionData);
+});
