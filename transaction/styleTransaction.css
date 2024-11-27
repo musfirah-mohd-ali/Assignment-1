@@ -152,3 +152,26 @@ p {
     border-radius: 5px;
     cursor: pointer;
 }
+.button:hover{
+    background-color: #005fa3;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table th, table td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+table th{
+    background-color: #0077C0;
+    color: white;
+}
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+table tr:hover{
+    background-color: #e6f7ff;
+}
