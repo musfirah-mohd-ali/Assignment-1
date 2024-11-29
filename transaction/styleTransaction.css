@@ -1,208 +1,206 @@
 /* General Reset */
 * {
-    margin: 0; /* Reset margin to 0 */
-    padding: 0; /* Reset padding to 0 */
-    box-sizing: border-box; /* Ensure box-sizing includes padding and border in element's total width/height */
-    font-family: 'Roboto', sans-serif; /* Set global font to Roboto */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif; 
 }
 
 /* Body Styling */
 body {
-    background-color: #f3f4f6; /* Light gray background color */
+    background-color: #f3f4f6;
 }
 
 /* Header Styling */
 header {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Align children to the center */
-    margin-bottom: 20px; /* Add space below the header */
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 20px; 
 }
 
 /* Header Content Container */
 .header-content {
     display: flex;
-    justify-content: space-between; /* Space out items evenly */
-    align-items: center; /* Align items vertically to the center */
+    justify-content: space-between;
+    align-items: center; 
     width: 100%;
     padding: 10px;
 }
 
 /* Logo Styling */
 .logo {
-    width: 200px; /* Set fixed width for the logo */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px; 
+    height: auto;
 }
-
 /* Logout Button Styling */
 .logout-button {
-    color: #EB6E1F; /* Set color of the button */
+    color: #EB6E1F; 
     font-weight: bold;
-    text-decoration: none; /* Remove underline */
-    font-size: 12px; /* Smaller font size */
+    text-decoration: none; 
+    font-size: 12px; 
     cursor: pointer;
-    padding: 5px 10px; /* Padding for the button */
-    border: 1px solid #EB6E1F; /* Border with the same color as text */
-    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; 
+    border: 1px solid #EB6E1F; 
+    border-radius: 5px; 
 }
 
 .logout-button:hover {
-    background-color: #EB6E1F; /* Change background color on hover */
-    color: white; /* Change text color to white */
-    transition: background-color 0.3s; /* Smooth transition effect */
+    background-color: #EB6E1F;
+    color: white;
+    transition: background-color 0.3s;
 }
 
 /* Navigation Styling */
 nav {
     width: 100%;
-    background-color: #0077C0; /* Blue background */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow below navigation */
+    background-color: #0077C0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Navigation List */
 nav ul {
     display: flex;
-    justify-content: space-between; /* Distribute items evenly */
-    padding: 10px 50px; /* Added horizontal padding to keep the ends away from the edges */
-    list-style: none; /* Remove default list styling */
+    justify-content: space-between;
+    padding: 10px 50px;
+    list-style: none; 
 }
 
 /* Navigation List Items */
 nav ul li {
-    position: relative; /* Positioning for potential pseudo-elements */
-    flex: 1; /* Allow items to take equal space */
-    text-align: center; /* Center the text */
+    position: relative; 
+    flex: 1; 
+    text-align: center;
 }
 
 nav ul li:not(:last-child) {
-    border-right: 1px solid rgba(255, 255, 255, 0.5); /* Right border for separation between items */
+    border-right: 1px solid rgba(255, 255, 255, 0.5); 
 }
 
 /* Navigation Links */
 nav ul li a {
-    font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue font */
-    color: white; /* White text color */
-    text-decoration: none; /* Remove underline from links */
-    padding: 15px 0; /* Vertical padding for better clickability */
-    font-size: 18px; /* Set font size */
-    display: block; /* Make the link a block element */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 18px; 
+    display: block;
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Change background color on hover */
-    color: #EB6E1F; /* Change text color on hover */
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #EB6E1F; /
 }
 
 /* Footer Styling */
 footer {
     width: 100%;
-    background-color: #0077C0; /* Blue background */
-    color: white; /* White text color */
-    text-align: center; /* Center the text */
-    padding: 15px; /* Add padding inside the footer */
-    position: relative; /* Position footer relative to the page */
+    background-color: #0077C0; 
+    color: white; 
+    text-align: center; 
+    padding: 15px;
+    position: relative; 
 }
 
 footer a {
-    color: #ffffff; /* White text color for links */
-    text-decoration: underline; /* Underline links */
+    color: #ffffff; 
+    text-decoration: underline; 
 }
-
 footer a:hover {
-    color: #ddd; /* Light gray color on hover */
+    color: #ddd;
 }
 
 /* Responsive Media Query */
 @media (max-width: 600px) {
     .main-content {
-        margin: 20px; /* Add margin on smaller screens */
+        margin: 20px; 
     }
     .header {
-        font-size: 20px; /* Adjust header font size */
+        font-size: 20px; 
     }
     .label {
-        font-size: 16px; /* Adjust label font size */
+        font-size: 16px; 
     }
 }
 
 /* Main Content Styling */
 .main-content {
-    max-width: 80%; /* Limit width of the content */
-    margin: 30px auto; /* Center content with margin */
-    padding: 20px; /* Add padding inside the content */
+    max-width: 80%; 
+    margin: 30px auto; 
+    padding: 20px; 
 }
 
 /* Main Heading */
 h2 {
-    font-size: 28px; /* Larger font size for headings */
-    color: #0077C0; /* Set heading color to blue */
-    margin-bottom: 10px; /* Add space below the heading */
-    text-align: center; /* Center the heading text */
+    font-size: 28px; 
+    color: #0077C0; 
+    margin-bottom: 10px; 
+    text-align: center; 
 }
 
 /* Paragraph Styling */
 p {
-    text-align: center; /* Center-align paragraph text */
-    color: #555; /* Set text color to dark gray */
-    margin-bottom: 30px; /* Add space below the paragraph */
+    text-align: center;
+    color: #555; 
+    margin-bottom: 30px; 
 }
 
 /* Footer Container */
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Distribute space evenly */
-    align-items: center; /* Center items vertically */
-    margin-top: 20px; /* Add space above the footer container */
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 20px; 
 }
 
 /* Date Filter Styling */
 #date-filter {
-    padding: 5px 10px; /* Add padding inside the date filter */
-    font-size: 16px; /* Set font size for the date filter */
+    padding: 5px 10px; 
+    font-size: 16px; 
 }
 
 /* Button Styling */
 .button {
-    padding: 5px 15px; /* Padding for buttons */
-    font-size: 16px; /* Set font size */
-    background-color: #0077C0; /* Blue background */
-    color: white; /* White text color */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Change cursor on hover */
+    padding: 5px 15px; 
+    font-size: 16px; 
+    background-color: #0077C0; 
+    color: white;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
 }
 
 .button:hover {
-    background-color: #005fa3; /* Change background color on hover */
+    background-color: #005fa3;
 }
 
 /* Table Styling */
 table {
-    width: 100%; /* Set table width to 100% */
-    border-collapse: collapse; /* Collapse table borders */
-    margin-top: 20px; /* Add space above the table */
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px; 
 }
 
 /* Table Header and Data Cells */
 table th, table td {
-    border: 1px solid #ddd; /* Border for table cells */
-    padding: 10px; /* Add padding inside cells */
-    text-align: center; /* Center-align text in cells */
+    border: 1px solid #ddd; 
+    padding: 10px;
+    text-align: center; 
 }
 
 /* Table Header Styling */
 table th {
-    background-color: #EB6E1F; /* Set background color for header */
-    color: white; /* White text color */
+    background-color: #EB6E1F;
+    color: white; 
 }
 
 /* Table Row Zebra Striping */
 table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Light gray background for even rows */
+    background-color: #f2f2f2;
 }
 
 /* Table Row Hover Effect */
 table tr:hover {
-    background-color: #e6f7ff; /* Light blue background on hover */
+    background-color: #e6f7ff;
 }

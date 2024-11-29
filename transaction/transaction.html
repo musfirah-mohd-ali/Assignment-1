@@ -1,70 +1,68 @@
-<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
-<html lang="en"> <!-- Set the language of the document to English -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Character encoding set to UTF-8 for wide character support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag for responsive design -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet"> <!-- Import Google Fonts (Roboto and Bebas Neue) -->
-    <link rel="stylesheet" href="styleTransaction.css"> <!-- Link to external CSS file for styling -->
-    <title>Home</title> <!-- Title of the webpage (displayed in browser tab) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleTransaction.css">
+    <title>Home</title>
 </head>
 <body>
-    <!-- Header Section -->
+
     <header>
         <div class="header-content">
-            <!-- Logo Image -->
-            <img class="logo" src="/index/CDGDrivingCentreLogo.png" alt="CDC logo" /> <!-- CDC logo image -->
-            <!-- Logout Button -->
-            <a href="#" class="logout-button">Logout</a> <!-- Link to log out -->
+            <img class="logo" src="/index/CDGDrivingCentreLogo.png" alt="CDC logo" />
+            <a href="#" class="logout-button">Logout</a>
         </div>
         <!-- Navigation Menu -->
         <nav>
             <ul>
-                <li><a href="/index/index.html">Home</a></li> <!-- Home link -->
-                <li><a href="/booking/booking.html">Booking</a></li> <!-- Booking link -->
-                <li><a href="/cancellation/cancellation.html">Cancellation/Re-Print Receipt</a></li> <!-- Cancellation/Re-Print link -->
-                <li><a href="#">Transaction Statements</a></li> <!-- Current page (Transaction Statements) -->
+                <li><a href="/index/index.html">Home</a></li>
+                <li><a href="/booking/booking.html">Booking</a></li>
+                <li><a href="/cancellation/cancellation.html">Cancellation/Re-Print Receipt</a></li>
+                <li><a href="#">Transaction Statements</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content Section -->
+
     <div class="main-content">
-        <h2>Transactions and Booking history</h2> <!-- Heading for the main content -->
-        <p>View your booking history and the prices involved.</p> <!-- Brief description of the page content -->
+        <h2>Transactions and Booking history</h2> 
+        <p>View your booking history and the prices involved.</p>
         
         <!-- Filter Section -->
         <div class="filter-container">
-            <label for="date-filter">Select a Date:</label> <!-- Label for the date filter input -->
-            <input type="date" id="date-filter" name="date"> <!-- Date input for selecting a specific date -->
-            <button id="clear-filter" class="button">Show All</button> <!-- Button to clear filter and show all transactions -->
+            <label for="date-filter">Select a Date:</label>
+            <input type="date" id="date-filter" name="date">
+            <button id="clear-filter" class="button">Show All</button>
         </div>
 
         <!-- Transaction Table -->
         <table>
             <thead>
                 <tr>
-                    <th>Booking ID</th> <!-- Column for Booking ID -->
-                    <th>Booking Type</th> <!-- Column for Booking Type -->
-                    <th>Date</th> <!-- Column for Date -->
-                    <th>Time Slot</th> <!-- Column for Time Slot -->
-                    <th>Lesson Type</th> <!-- Column for Lesson Type -->
-                    <th>Total Price</th> <!-- Column for Total Price -->
+                    <th>Booking ID</th>
+                    <th>Booking Type</th> 
+                    <th>Date</th>
+                    <th>Time Slot</th>
+                    <th>Lesson Type</th>
+                    <th>Total Price</th> 
                 </tr>
             </thead>
             <tbody id="transaction-table">
-                <!-- Transaction rows will be inserted here by JavaScript -->
+
             </tbody>
         </table>
     </div>
 
     <!-- Footer Section -->
     <footer>
-        Copyright © 2009 ComfortDelGro Driving Centre. All rights reserved. <!-- Copyright statement -->
-        <a href="#">Terms of Use</a> | <!-- Link to Terms of Use -->
-        <a href="#">Privacy Policy</a> <!-- Link to Privacy Policy -->
+        Copyright © 2009 ComfortDelGro Driving Centre. All rights reserved.
+        <a href="#">Terms of Use</a> |
+        <a href="#">Privacy Policy</a>
     </footer>
 
-    <!-- External JavaScript File -->
-    <script src="/transaction/scriptTransaction.js"></script> <!-- External script for transaction logic -->
+
+    <script src="/transaction/scriptTransaction.js"></script>
 </body>
 </html>

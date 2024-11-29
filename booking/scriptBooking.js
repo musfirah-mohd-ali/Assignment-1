@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // call teh references from HTML
+    // call the references from HTML
     const lessonDateInput = document.getElementById("lesson-date"); // input field for selecting the date
     const slotContainer = document.getElementById("slot-container"); // container for generated time slots
     const bookingForm = document.getElementById("booking-form"); // the booking form element

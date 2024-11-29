@@ -1,7 +1,7 @@
-// Wait for the DOM to fully load before executing the script
+// waiting for the DOM to fully load before running the script
 document.addEventListener("DOMContentLoaded", function() {
     
-    // Sample data representing transaction information
+    // data for teh table
     const transactionData = [
         {
             bookingId: "045",
@@ -37,22 +37,22 @@ document.addEventListener("DOMContentLoaded", function() {
         },
     ];
 
-    // Get reference to the table body and the date filter input element
+    // references for date input and table body
     const tableBody = document.getElementById("transaction-table");
     const dataFilter = document.getElementById("date-filter");
     const clearFilter = document.getElementById("clear-filter");
 
-    // Function to populate the table with data
+    // fill table with data provided
     function populateTable(data) {
-        tableBody.innerHTML = ""; // Clear any existing table rows
+        tableBody.innerHTML = ""; // ensures taht the table starts fresh wiht only new data
         if (data.length === 0) {
-            tableBody.innerHTML = "<tr><td colspan='5'>No data found.</td></tr>"; // Show message if no data found
+            tableBody.innerHTML = "<tr><td colspan='5'>No data found.</td></tr>"; // informs the user that there is no data
             return;
         }
 
-        // Loop through the data and create table rows for each transaction
-        data.forEach(transaction => {
-            const row = document.createElement("tr"); // Create a new table row
+        // adds rows to a table, each row representing a transaction from the data
+        data.forEach(transaction => { //goes through each item in the data array one by one
+            const row = document.createElement("tr"); // create a new table row
             row.innerHTML = `
                 <td>${transaction.bookingId}</td>
                 <td>${transaction.bookingType}</td>
@@ -61,28 +61,28 @@ document.addEventListener("DOMContentLoaded", function() {
                 <td>${transaction.lessonType}</td>
                 <td>${transaction.totalPrice}</td>
             `;
-            tableBody.appendChild(row); // Add the row to the table body
+            tableBody.appendChild(row); // add the row to the table body
         });
     }
 
-    // Event listener for the date filter input
+    // looks for a change event in the dateFilter element
     dataFilter.addEventListener("change", function() {
-        const selectedDate = dataFilter.value; // Get the selected date from the input
+        const selectedDate = dataFilter.value; // captures the data chosen by the user
         if (selectedDate) {
-            // Filter the transaction data by the selected date
+            // filters the transaction data by the selected date
             const filteredData = transactionData.filter(
                 transaction => transaction.date === selectedDate
             );
-            populateTable(filteredData); // Populate the table with filtered data
+            populateTable(filteredData); // updates the table with only the transactions that match the selected date
         }
     });
 
-    // Event listener for the clear filter button
+    // lets the user to reset the date filter ande view all transaction in the tab;e
     clearFilter.addEventListener("click", function() {
-        dataFilter.value = ""; // Clear the selected date in the filter
-        populateTable(transactionData); // Show all transactions again
+        dataFilter.value = ""; // clears the selected date
+        populateTable(transactionData); // inputs all the data with the original dataset into the table
     });
 
-    // Initial population of the table when the page loads
+   // automatically displays all transactions in the table when the page first loads
     populateTable(transactionData);
 });
