@@ -112,9 +112,9 @@ footer a:hover {
 }
 
 /* Responsive Media Query */
-@media (max-width: 600px) {
+@media (max-width: 100%) {
     .main-content {
-        margin: 20px; 
+        margin: 100%; 
     }
     .header {
         font-size: 20px; 
@@ -203,4 +203,41 @@ table tr:nth-child(even) {
 /* Table Row Hover Effect */
 table tr:hover {
     background-color: #e6f7ff;
+}
+
+/* Responsive Table - Shrink and Adjust */
+table {
+    width: 100%; /* Ensure the table spans the full width of the container */
+    overflow-x: auto; /* Add horizontal scroll for very small screens */
+    font-size: 1rem; /* Base font size */
+}
+
+@media (max-width: 1024px) {
+    table {
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+
+    table th, table td {
+        padding: 8px; /* Adjust padding for better fit */
+    }
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 0.8rem; /* Further reduce font size for smaller screens */
+    }
+
+    table th, table td {
+        padding: 6px; /* Reduce padding */
+    }
+}
+
+@media (max-width: 30%) {
+    table {
+        font-size: 0.7rem; /* Minimize font size for narrow screens */
+    }
+
+    table th, table td {
+        padding: 4px; /* Compact padding */
+    }
 }
