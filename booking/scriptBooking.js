@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const lessonDateInput = document.getElementById("lesson-date");
     const slotContainer = document.getElementById("slot-container");
+    const bookingForm = document.getElementById("booking-form");
 
     // Simulate available time slots
     const timeSlots = [
@@ -10,45 +11,32 @@ document.addEventListener("DOMContentLoaded", function () {
         { time: "2:30 PM - 3:30 PM", available: true }
     ];
 
-    let selectedSlot = null; // Track selected time slot
+    let selectedSlot = null;
 
-    // Function to update available time slots based on selected date
-    lessonDateInput.addEventListener("change", function () {
-        const selectedDate = new Date(lessonDateInput.value);
-        const currentDate = new Date();
-
-        // If the selected date is today or in the future, show time slots
-        if (selectedDate >= currentDate) {
-            updateTimeSlots();
-        } else {
-            slotContainer.innerHTML = "<p>Please select a valid date.</p>";
-        }
-    });
-
-    // Function to populate available time slots
+    // Populate available time slots
     function updateTimeSlots() {
         slotContainer.innerHTML = ""; // Clear previous slots
         timeSlots.forEach((slot, index) => {
             const slotCard = document.createElement("div");
             slotCard.classList.add("slot-card");
+
             const slotText = document.createElement("h4");
             slotText.textContent = slot.time;
+
             const slotButton = document.createElement("button");
             slotButton.textContent = slot.available ? "Select" : "Unavailable";
             slotButton.classList.add("slot-button");
-            slotButton.disabled = !slot.available; // Disable button if slot is not available
+            slotButton.disabled = !slot.available;
 
-            // Highlight selected slot
             if (selectedSlot === index) {
                 slotCard.classList.add("selected");
                 slotButton.textContent = "Selected";
                 slotButton.disabled = true;
             }
 
-            slotButton.addEventListener("click", function () {
-                // Update selected slot and UI
+            slotButton.addEventListener("click", () => {
                 selectedSlot = index;
-                updateTimeSlots(); // Re-render time slots
+                updateTimeSlots(); // Re-render slots
             });
 
             slotCard.appendChild(slotText);
@@ -57,6 +45,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Clear input fields and selected slot
+    function clearForm() {
+        lessonDateInput.value = "";
+        document.getElementById("lesson-type").value = "basic";
+        document.getElementById("additional-notes").value = "";
+        selectedSlot = null;
+        updateTimeSlots();
+    }
+
+    // Handle form submission
+    bookingForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Check if a time slot is selected
+        if (selectedSlot === null) {
+            alert("Please select a time slot before booking.");
+            return;
+        }
+
+        alert("Your lesson has been successfully booked!");
+
+        clearForm(); // Clear inputs after booking
+    });
+
     // Default to today's date if not already selected
     lessonDateInput.valueAsDate = new Date();
+    updateTimeSlots(); // Initial render of time slots
 });
