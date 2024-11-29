@@ -30,7 +30,7 @@
 
             <section class="form-section">
                 <h3>Cancel Booking</h3>
-                <form method="post">
+                <form id="cancel-booking-form">
                     <label for="booking-id">Booking ID:</label>
                     <input type="text" id="booking-id" name="booking-id" placeholder="Enter your booking ID" required>
                     
@@ -43,7 +43,7 @@
 
             <section class="form-section">
                 <h3>Re-Print Receipt</h3>
-                <form method="post">
+                <form id="reprint-receipt-form">
                     <label for="receipt-id">Receipt ID:</label>
                     <input type="text" id="receipt-id" name="receipt-id" placeholder="Enter receipt ID" required>
                     
@@ -58,5 +58,7 @@
         <a href="#">Terms of Use</a> | 
         <a href="#">Privacy Policy</a>
     </footer>
+
+    <script src="scriptCancel.js"></script>
 </body>
 </html>
