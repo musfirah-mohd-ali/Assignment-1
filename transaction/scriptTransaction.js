@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const transactionData = [
         {
+            bookingId: "045",
             bookingType: "Driving Lesson",
             date: "2024-11-04",
             timeSlot: "9:00 AM - 10:40 AM",
@@ -8,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
             totalPrice: "$89.75"
         },
         {
+            bookingId: "005",
             bookingType: "Theory Lesson",
             date: "2024-11-12",
             timeSlot: "8:30 AM - 9:30 AM",
@@ -15,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
             totalPrice: "$45.60"
         },
         {
+            bookingId: "019",
             bookingType: "Driving Lesson",
             date: "2024-11-14",
             timeSlot: "2:30 PM - 5:20 PM",
@@ -22,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
             totalPrice: "$89.75"
         },
         {
+            bookingId: "180",
             bookingType: "Circuit Improvement",
             date: "2024-11-30",
             timeSlot: "2:30 PM - 5:20 PM",
@@ -43,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
         data.forEach(transaction => {
             const row = document.createElement("tr");
             row.innerHTML = `
+                <td>${transaction.bookingId}</td>
                 <td>${transaction.bookingType}</td>
                 <td>${transaction.date}</td>
                 <td>${transaction.timeSlot}</td>
