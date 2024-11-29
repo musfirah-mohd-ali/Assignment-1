@@ -1,187 +1,210 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Reset margin for all elements */
+    padding: 0; /* Reset padding for all elements */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+    font-family: 'Roboto', sans-serif; /* Set default font family */
 }
 
+/* Body styling */
 body {
-    background-color: #f3f4f6;
+    background-color: #f3f4f6; /* Light gray background color */
 }
 
 /* Header Styling */
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
+    display: flex; /* Use flexbox for the header content */
+    justify-content: space-between; /* Space out logo and logout button */
+    align-items: center; /* Vertically align items */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding around content */
 }
 
+/* Styling for the logo */
 .logo {
-    width: 200px;
-    height: auto;
+    width: 200px; /* Set logo width */
+    height: auto; /* Auto adjust height to maintain aspect ratio */
 }
 
+/* Styling for the logout button */
 .logout-button {
-    color: #EB6E1F;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 12px;
-    cursor: pointer;
-    padding: 5px 10px;
-    border: 1px solid #EB6E1F;
-    border-radius: 5px;
+    color: #EB6E1F; /* Set text color */
+    font-weight: bold; /* Make text bold */
+    text-decoration: none; /* Remove underline */
+    font-size: 12px; /* Set font size */
+    cursor: pointer; /* Change cursor on hover */
+    padding: 5px 10px; /* Padding around button */
+    border: 1px solid #EB6E1F; /* Border color */
+    border-radius: 5px; /* Rounded corners */
 }
 
+/* Hover effect for logout button */
 .logout-button:hover {
-    background-color: #EB6E1F;
-    color: white;
-    transition: background-color 0.3s;
+    background-color: #EB6E1F; /* Change background on hover */
+    color: white; /* Change text color */
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
+/* Navigation styling */
 nav {
-    width: 100%;
-    background-color: #0077C0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width */
+    background-color: #0077C0; /* Set background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+/* Navigation menu styling */
 nav ul {
-    display: flex;
-    justify-content: space-between; 
-    padding: 10px 50px; 
-    list-style: none;
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: space-between; /* Space items evenly */
+    padding: 10px 50px; /* Padding on left and right */
+    list-style: none; /* Remove default list style */
 }
 
+/* List item styling for each nav item */
 nav ul li {
-    position: relative; 
-    flex: 1;
-    text-align: center; 
+    position: relative; /* Positioning for pseudo-elements */
+    flex: 1; /* Allow items to expand equally */
+    text-align: center; /* Center-align text */
 }
 
+/* Add border between menu items */
 nav ul li:not(:last-child) {
-    border-right: 1px solid rgba(255, 255, 255, 0.5); 
+    border-right: 1px solid rgba(255, 255, 255, 0.5); /* Right border for all items except the last one */
 }
 
+/* Navigation link styling */
 nav ul li a {
-    font-family: 'Bebas Neue', sans-serif;
-    color: white;
-    text-decoration: none;
-    padding: 15px 0; 
-    font-size: 18px;
-    display: block; 
-    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Bebas Neue', sans-serif; /* Use specific font */
+    color: white; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    padding: 15px 0; /* Vertical padding */
+    font-size: 18px; /* Set font size */
+    display: block; /* Make the link block-level */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
 }
 
+/* Hover effect for navigation links */
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #EB6E1F;
+    background-color: rgba(255, 255, 255, 0.2); /* Change background on hover */
+    color: #EB6E1F; /* Change text color */
 }
 
+/* Active state for navigation links */
 nav ul li a.active {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #EB6E1F;
+    background-color: rgba(255, 255, 255, 0.2); /* Highlight active link */
+    color: #EB6E1F; /* Active link color */
 }
 
-/* Main Content */
+/* Main content styling */
 .main-content {
-    max-width: 80%;
-    margin: 30px auto;
-    padding: 20px;
+    max-width: 80%; /* Limit the maximum width */
+    margin: 30px auto; /* Center the content with top and bottom margin */
+    padding: 20px; /* Padding inside the main content */
 }
 
+/* Heading styling */
 h2 {
-    font-size: 28px;
-    color: #0077C0;
-    margin-bottom: 10px;
-    text-align: center;
+    font-size: 28px; /* Set font size */
+    color: #0077C0; /* Heading color */
+    margin-bottom: 10px; /* Bottom margin */
+    text-align: center; /* Center align the heading */
 }
 
+/* Paragraph styling */
 p {
-    text-align: center;
-    color: #555;
-    margin-bottom: 30px;
+    text-align: center; /* Center align text */
+    color: #555; /* Set text color */
+    margin-bottom: 30px; /* Bottom margin */
 }
 
-/* Form Sections */
+/* Form section styling */
 .form-section {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 30px;
-    margin: 20px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px; /* Padding inside the section */
+    margin: 20px 0; /* Vertical margin between sections */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
+/* Section heading styling */
 h3 {
-    font-size: 22px;
-    color: #EB6E1F;
-    margin-bottom: 20px;
-    text-align: left;
+    font-size: 22px; /* Font size */
+    color: #EB6E1F; /* Heading color */
+    margin-bottom: 20px; /* Bottom margin */
+    text-align: left; /* Left-aligned heading */
 }
 
+/* Label styling for form fields */
 label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #555;
+    display: block; /* Display labels as block elements */
+    margin-bottom: 10px; /* Margin below labels */
+    font-weight: bold; /* Make labels bold */
+    color: #555; /* Label text color */
 }
 
+/* Styling for input fields and textarea */
 input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside fields */
+    margin-bottom: 20px; /* Bottom margin */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Set font size */
 }
 
+/* Focused input and textarea styling */
 input:focus, textarea:focus {
-    border-color: #EB6E1F;
-    outline: none;
+    border-color: #EB6E1F; /* Change border color on focus */
+    outline: none; /* Remove default outline */
 }
 
+/* Disable textarea resize */
 textarea {
-    resize: none;
+    resize: none; /* Prevent resizing of textarea */
 }
 
+/* Submit button styling */
 .submit-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #EB6E1F;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside the button */
+    background-color: #EB6E1F; /* Button color */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
+/* Hover effect for submit button */
 .submit-button:hover {
-    background-color: #c9561d;
+    background-color: #c9561d; /* Darker background on hover */
 }
 
-/* Footer */
+/* Footer styling */
 footer {
-    width: 100%;
-    background-color: #0077C0;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    width: 100%; /* Full width */
+    background-color: #0077C0; /* Blue background */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding inside footer */
 }
 
+/* Footer link styling */
 footer a {
-    color: #ffffff;
-    text-decoration: underline;
+    color: #ffffff; /* White link color */
+    text-decoration: underline; /* Underline links */
 }
 
+/* Footer link hover effect */
 footer a:hover {
-    color: #ddd;
+    color: #ddd; /* Light color on hover */
 }
 
+/* Media query for small screens */
 @media (max-width: 600px) {
     .main-content {
-        margin: 20px;
+        margin: 20px; /* Reduced margin on small screens */
     }
 }
