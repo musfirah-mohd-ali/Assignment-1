@@ -211,18 +211,46 @@ nav ul li a.active {
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    /* Adjust navigation styles */
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5px 10px;
+    }
+
+    /* Adjust font size for smaller screens */
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    /* Adjust other text elements as needed */
+    h2 {
+        font-size: 18px;
+    }
+
+    th, td {
+        font-size: 12px;
+    }
+
     .main-content, section {
         width: 95%;
         margin: 15px auto;
         padding: 15px;
     }
 
-    th, td {
-        font-size: 14px;
-        padding: 10px 12px;
-    }
-
-    h2 {
-        font-size: 20px;
+    /* Center the logo in the navigation bar on smaller screens */
+    .header-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
     }
 }

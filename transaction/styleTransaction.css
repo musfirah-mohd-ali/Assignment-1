@@ -33,6 +33,7 @@ header {
     width: 200px; 
     height: auto;
 }
+
 /* Logout Button Styling */
 .logout-button {
     color: #EB6E1F; 
@@ -58,7 +59,6 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation List */
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -66,18 +66,16 @@ nav ul {
     list-style: none; 
 }
 
-/* Navigation List Items */
 nav ul li {
-    position: relative; 
     flex: 1; 
     text-align: center;
+    position: relative;
 }
 
 nav ul li:not(:last-child) {
     border-right: 1px solid rgba(255, 255, 255, 0.5); 
 }
 
-/* Navigation Links */
 nav ul li a {
     font-family: 'Bebas Neue', sans-serif;
     color: white;
@@ -90,7 +88,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    color: #EB6E1F; /
+    color: #EB6E1F;
 }
 
 /* Footer Styling */
@@ -107,21 +105,9 @@ footer a {
     color: #ffffff; 
     text-decoration: underline; 
 }
+
 footer a:hover {
     color: #ddd;
-}
-
-/* Responsive Media Query */
-@media (max-width: 100%) {
-    .main-content {
-        margin: 100%; 
-    }
-    .header {
-        font-size: 20px; 
-    }
-    .label {
-        font-size: 16px; 
-    }
 }
 
 /* Main Content Styling */
@@ -131,7 +117,6 @@ footer a:hover {
     padding: 20px; 
 }
 
-/* Main Heading */
 h2 {
     font-size: 28px; 
     color: #0077C0; 
@@ -139,19 +124,10 @@ h2 {
     text-align: center; 
 }
 
-/* Paragraph Styling */
 p {
     text-align: center;
     color: #555; 
     margin-bottom: 30px; 
-}
-
-/* Footer Container */
-.footer-container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    margin-top: 20px; 
 }
 
 /* Date Filter Styling */
@@ -175,69 +151,103 @@ p {
     background-color: #005fa3;
 }
 
-/* Table Styling */
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
 table {
     width: 100%;
     border-collapse: collapse; 
-    margin-top: 20px; 
+    font-size: 1rem;
 }
 
-/* Table Header and Data Cells */
 table th, table td {
     border: 1px solid #ddd; 
     padding: 10px;
     text-align: center; 
 }
 
-/* Table Header Styling */
 table th {
     background-color: #EB6E1F;
     color: white; 
 }
 
-/* Table Row Zebra Striping */
 table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Table Row Hover Effect */
 table tr:hover {
     background-color: #e6f7ff;
 }
 
-/* Responsive Table - Shrink and Adjust */
-table {
-    width: 100%; /* Ensure the table spans the full width of the container */
-    overflow-x: auto; /* Add horizontal scroll for very small screens */
-    font-size: 1rem; /* Base font size */
-}
-
+/* Responsive Styles */
 @media (max-width: 1024px) {
     table {
-        font-size: 0.9rem; /* Slightly smaller font size */
+        font-size: 0.9rem;
     }
 
     table th, table td {
-        padding: 8px; /* Adjust padding for better fit */
+        padding: 8px;
     }
 }
 
 @media (max-width: 768px) {
+    
+    .main-content {
+        padding: 10px;
+    }
+
     table {
-        font-size: 0.8rem; /* Further reduce font size for smaller screens */
+        font-size: 0.8rem;
     }
 
     table th, table td {
-        padding: 6px; /* Reduce padding */
+        padding: 6px;
+        white-space: nowrap;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    /* Adjust navigation styles */
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5px 10px;
+    }
+
+    /* Adjust font size for smaller screens */
+    nav ul li a {
+        font-size: 14px;
     }
 }
 
-@media (max-width: 30%) {
+@media (max-width: 480px) {
     table {
-        font-size: 0.7rem; /* Minimize font size for narrow screens */
+        font-size: 0.75rem;
     }
 
     table th, table td {
-        padding: 4px; /* Compact padding */
+        padding: 4px;
+    }
+
+    h2 {
+        font-size: 28px;
+        color: #0077C0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #555;
+        text-align: center;
+        margin-bottom: 20px;
     }
 }

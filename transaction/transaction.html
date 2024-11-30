@@ -25,9 +25,8 @@
         </nav>
     </header>
 
-
     <div class="main-content">
-        <h2>Transactions and Booking history</h2> 
+        <h2>Transactions and Booking History</h2> 
         <p>View your booking history and the prices involved.</p>
         
         <!-- Filter Section -->
@@ -38,21 +37,22 @@
         </div>
 
         <!-- Transaction Table -->
-        <table>
-            <thead>
-                <tr>
-                    <th>Booking ID</th>
-                    <th>Booking Type</th> 
-                    <th>Date</th>
-                    <th>Time Slot</th>
-                    <th>Lesson Type</th>
-                    <th>Total Price</th> 
-                </tr>
-            </thead>
-            <tbody id="transaction-table">
-
-            </tbody>
-        </table>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Booking Type</th> 
+                        <th>Date</th>
+                        <th>Time Slot</th>
+                        <th>Lesson Type</th>
+                        <th>Total Price</th> 
+                    </tr>
+                </thead>
+                <tbody id="transaction-table">
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!-- Footer Section -->
@@ -61,7 +61,6 @@
         <a href="#">Terms of Use</a> |
         <a href="#">Privacy Policy</a>
     </footer>
-
 
     <script src="/transaction/scriptTransaction.js"></script>
 </body>
