@@ -72,12 +72,12 @@ Wireframes were created in Figma to visualize the layout and flow of the website
 2. Select a date and time for the lesson.
 3. Submit the form and verify that a confirmation message appears with the details of the booking.
 
-### Cancellation Form:
+#### Cancellation Form:
 1. Go to the "Cancellation/Re-Print" page.
 2. Enter a valid booking ID and a reason for cancellation.
 3. Submit the form and verify that the booking is canceled, and a confirmation message is displayed.
 
-### Re-Print Receipt:
+#### Re-Print Receipt:
 1. Go to the "Cancellation/Re-Print" page.
 2. Enter a valid receipt ID.
 3. Submit the form and verify that the receipt is re-printed.
