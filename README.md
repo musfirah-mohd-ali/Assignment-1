@@ -37,6 +37,8 @@ I changed the entire aesthetic due to how cluttered the original design looked. 
 ## Wireframes and Mockups:
 Wireframes were created in Figma to visualize the layout and flow of the website. These wireframes helped guide the design process, ensuring that each page and feature was streamlined and easy to use. Here is a link to the Figma wireframes.
 
+https://www.figma.com/design/BGeBP73KkODd79OEDJt7HC/18_musfirahBinteMohamedAli_wireframe?node-id=55-84&t=cnxd2fHofLZRqx06-1
+
 ## Features
 ### Existing Features:
 
